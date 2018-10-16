@@ -1,0 +1,24 @@
+{
+  "name": "renshu",
+  "version": "1.0.0",
+  "description": "renshu sort",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymitz/renshu.git"
+  },
+  "author": "ymitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ymitz/renshu/issues"
+  },
+  "homepage": "https://github.com/ymitz/renshu#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3"
+  }
+}
