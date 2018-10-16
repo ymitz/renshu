@@ -1,9 +1,9 @@
 // sort
 
-let random_list = [1,6,4,7,5,111,34]
+let random_list = [6,4,7,5,1,111,34]
 
 let result = []
-result.push(random_list.sort((a,b)=>a-b))
+//result.push(random_list.sort((a,b)=>a-b))
 
 let sortedfunc = (list) => list.reduce(
     (prev, current, index) => {
@@ -13,10 +13,12 @@ let sortedfunc = (list) => list.reduce(
             return prev
         }
         if (current > prev[index -1]) {
+            console.log(prev)
             prev.push(current)
          }  
         else {
-            prev.unshift(current)
+            console.log(prev)
+            prev.splice(-1,0,current)
         }
     return prev 
 },[])
