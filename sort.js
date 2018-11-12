@@ -5,7 +5,7 @@ let random_list = [6,4,7,5,1010,111,34]
 let result = []
 //result.push(random_list.sort((a,b)=>a-b))
 
-let sortedfunc = (list) => list.reduce(
+let sortedfunc = list => list.reduce(
     (prev, current, index) => {
         if (index === 0) {
             prev.push(current)

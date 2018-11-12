@@ -4,7 +4,8 @@
   "description": "renshu sort",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node index.js"
+    "sort": "babel-node sort.js",
+    "async": "babel-node async.js"
   },
   "repository": {
     "type": "git",
