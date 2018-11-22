@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sort": "babel-node ./logic/sort.js",
+    "ob": "babel-node ./logic/observer_closure.js",
     "async": "babel-node ./logic/async.js"
   },
   "repository": {
