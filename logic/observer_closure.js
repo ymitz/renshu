@@ -3,7 +3,7 @@ function inner() {
     console.log(subject.x + 'をオブザーバがミてるよ');
 }
 
-//ここで明示的に使ってはないが、関数には渡す。
+//ここで明示的に使ってはないが、関数を渡す。
 function observer(subject) {
     return inner;
 }
@@ -20,7 +20,6 @@ let subject = {
         this.observer()();
     }
 }
-
 subject.observer = observer;
 
 subject.countup();
