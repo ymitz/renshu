@@ -125,7 +125,6 @@ $(function () {
         return primememo[primememo.length - 1];
     }
     answers.push(answer7);
-    */
 
     let answer8 = function () {
         let str = "73167176531330624919225119674426574742355349194934"
@@ -167,6 +166,46 @@ $(function () {
         return answer;
     }
     answers.push(answer8);
+
+    let answer9 = function () {
+        let a = 1;
+        let b = 1;
+        let answer=0;
+        for(let a = 1; a<1000; a++){
+            for(let b=1;b<1000;b++){
+                if((a ** 2 + b ** 2) === (1000-a-b)**2){
+                    answer= a * b * (1000-a-b);
+                    break;
+                }
+            }
+        }
+        return answer;
+    }
+    answers.push(answer9);
+    
+    */
+
+    let answer10 = function () {
+        let sum=2;
+        let primelist= [2]
+        for(let a=3; a < 2000000; a++){
+            for(prime of primelist){
+                if(a % prime !== 0){
+                    if(prime === primelist[primelist.length -1]){
+                        primelist.push(a);
+                        sum += a;
+                    }
+                    continue;
+                }
+                else{
+                    break;
+                } 
+            }
+        }
+        return sum;
+    }
+
+    answers.push(answer10);
 
     answerdom = $('<ul>');
     answers.forEach(function (answer) {
